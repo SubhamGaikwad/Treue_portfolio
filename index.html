@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Navbar styles */
+    .navbar {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      height: 40px;
+    }
+
+    .navbar ul {
+      margin: 0;
+      padding: 10px;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    .navbar li {
+      margin: 0 10px;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Content section styles */
+    .content {
+      padding: 20px;
+      background-image: linear-gradient(to bottom, #f0f0f0, #d1d1d1);
+      text-align: center;
+      color: #333;
+    }
+
+    .heading h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    p {
+      font-size: large;
+      line-height: 1.6;
+    }
+
+    /* Footer styles */
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Social media icon styles */
+    .social-icons {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .social-icon {
+      display: inline-block;
+      font-size: 32px;
+      color: #007bff;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+
+    .social-icon:hover {
+      color: #0056b3;
+    }
+
+    .contact-form {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+      
+    }
+
+    .contact-form h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #007bff;
+    }
+
+    .contact-form label {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      height: 150px;
+    }
+
+    .contact-form button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    
+    
+    <ul>
+      
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/portfolio">Portfolio</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Content section -->
+  <div class="content">
+    <div class="heading">
+      <h1>Hi</h1>
+      <h1> My Name Is Subham Gaikwad..</h1>
+      <h1>Welcome to My Portfolio</h1>
+    </div>
+    <p>
+      Hi, I'm Subham Gaikwad, a full stack developer with expertise in HTML, CSS, JavaScript, ReactJS, NodeJS, and MongoDB. I have hands-on experience in building web applications from scratch and improving existing ones.
+      I love exploring new technologies and implementing them in my work to enhance user experience and efficiency.
+      I am proficient in both front-end and back-end development, and I enjoy collaborating with designers, developers, and clients to create solutions that meet business goals. My ability to work under pressure, prioritize tasks, and solve complex problems makes me an ideal candidate for any project.
+    </p>
+
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/subham-gaikwad-35003220b" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/SubhamGaikwad" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/GaikwadSubham" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+    </div>
+
+    <div class="contact-form">
+      <h2>Contact Me</h2>
+      <form action="/submit_form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h2>All rights reserved &copy; 2023</h2>
+  </div>
+
+</body>
+</html>
